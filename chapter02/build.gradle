@@ -1,0 +1,19 @@
+buildscript {
+    dependencies {
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:1.2.0.RELEASE")
+    }
+    repositories {
+    	mavenCentral()
+	}
+}
+apply plugin: 'spring-boot'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+	compile("org.springframework.boot:spring-boot-starter-web:1.2.0.RELEASE")
+}
+
+jar.baseName= 'bluenote'
