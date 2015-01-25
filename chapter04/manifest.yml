@@ -1,0 +1,9 @@
+---
+applications:
+  - name: bluenote2
+    memory: 1GB
+    instances: 1
+    path: build/libs/bluenote.jar
+    buildpack: https://github.com/cloudfoundry/java-buildpack
+    services:
+      - mongodb-fx
